@@ -1,19 +1,9 @@
 import React from 'react'
-import { Counter } from './Counter'
+import { nanoid } from 'nanoid';
 
 export { Page }
 
 function Page() {
-  return (
-    <>
-      <h1>Welcome</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Counter />
-        </li>
-      </ul>
-    </>
-  )
+  console.log(nanoid());
+  return <h1>{nanoid()}</h1>;
 }
